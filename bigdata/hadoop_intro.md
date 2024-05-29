@@ -41,7 +41,7 @@ There are three main components of Hadoop:
 
 ## Hadoop Ecosystem
 The **Hadoop Ecosystem** contains some tools which extend the functionality of Apache Hadoop:
-![hadoop_ecosys](images/hadoop_ecosystem.png)
+![hadoop](images/hadoop_ecosystem.png)
 Here is an overview of the tools in this diagram:
 ### Zookeeper
 A highly reliable, open-source service which co-ordinates requests across ditributed cloud servers.
