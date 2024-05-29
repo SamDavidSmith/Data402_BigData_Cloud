@@ -50,7 +50,7 @@ There are three main components which make up cloud computing and what it can pr
 1. **Internet required**: Internet is almost always needed to access your cloud-based item.
 2. **Third-party provider**: Handing over your data to a cloud provider can create a whole host of problems around security, lack of control, and difficulty changing providers.
 
-## Finance in Cloud Computing
+# Finance in Cloud Computing
 ![finance_cloud](images/financial-markets.jpg)
 ## Expenditure
 ### ***Capital Expenditure*** are funds allocated by a company used to spend acquiring and maintaining physical items
@@ -80,3 +80,25 @@ This is another term for the largest cloud service providers. These are companie
 * Honourable Mentions:
   * **IBM Cloud**: Notable for its AI solutions
   * **Alibaba Cloud**: Popular in Asia, particularly China, mainly due to geopolitical tensions between China and USA providers.
+
+### The Best Cloud Provider is...
+![decision](images/decision_cloud.png)
+The best cloud provider truly does depend on the business and the demands of your company or project. <br>
+My project involving machine learning was made very easy thanks to **Google** and its cloud services. I was able to store all my model checkpoints and run high-memory training procedures for a relatively small monthly fee.<br>
+However, **Azure** was easy to learn when we were applying operations onto big data using Spark. These servers can vary in price.<br>
+I cannot offer an opinion on **AWS** due to never having encountered it.
+
+### Costs and Fees
+What are you paying for when you purchase a cloud service subscription?
+* **Virtual Machine Resources**: this includes RAM and CPU capabilities and another computing resources.
+* **Storage**: very useful when managing big data and operations on data.
+* **Networking**: This ensures the cloud is accessible from other devices, especially over different time zones.
+
+## Data Management
+
+Data is stored within the cloud. This could be via files, images, videos and more or in block storage. This data would need to be accessed either through APIs, or through a data stream, where certain analytical tasks would require high-performance streams.
+<br>This data can be analysed through implemented software offered by most cloud platforms. Amazon offer **Redshift**, Google offer **BigQuery**, while Azure offer **HDInsight**. ![redshift](images/redshift.png) <br>These services, such as Amazon Redshift above, allow you to structure data warehouses and data lakes for efficient analysis and ETL pipelines.
+
+<br>Cloud computing requires a certain level of expertise, which is not too common nowadays. One requires a knowledge of **cloud systems**, particularly clusters and parallel processes. <br> You would also need to understand the **hyperscalers** mentioned above, and determine which is best suited to your needs. Each individual service contains software which would need a fair bit of study and experience to manage, although there exist sufficient use cases on the internet.
+<br>These individual services would help with data processing, data analysis, machine learning etc.
+<br> Experts in security and compliance are essential for a large institution, handling large amounts of financial or otherwise sensitive data.
