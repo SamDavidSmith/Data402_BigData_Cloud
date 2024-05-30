@@ -1,0 +1,31 @@
+SSH Linking to Existing Repo Documentation:
+
+Firstly, you will want to open a Git Bash command line within your .ssh/ file in "Users" for Windows:
+
+Run: cd .ssh
+Run: ssh-keygen -t rsa -b 4096 -C "<email>"
+
+Make sure to name your key storage file something sensible. Press enter at the passphrase to indicate you don't want a password.
+
+After the randomart image is displayed, Bash will tell you that a public and a PRIVATE identification key have been created.
+
+Use sudo nano <ssh_key_filename>.pub OR cat <ssh_key_filename>.pub
+to display your public key. Remember to include .pub! There is no reason to look at your private key.
+
+Right click and copy the public key string from 'ssh-...' to the end of your email address, with no whitespace at all.
+
+Now, go to your repo on Github, and go to Settings and 'Deploy keys'.
+Add your Title (preferably with _key on the end)
+Paste the ssh key and REMEMBER TO TICK 'ALLOW WRITE ACCESS'
+
+I have just linked the SSH public key to put a lock on my repo that only I have the key to. However, as you have put your key in the .ssh folder, you need to help your computer find the right key on the keychain.
+
+In your folder which is being controlled by Git:
+Run: eval `ssh-agent`
+Run: `ssh-add ~/.ssh/<ssh_key_filename>`
+Run: `ssh -T git@github.com`
+You should get a message welcoming you with the repo name and that you can't get access through the shell.
+
+However you can clone the repo to your local device, using the SSH address next to the HTTP link in GitHub.
+
+You will be able to push/pull in this second Bash window AS LONG AS it is kept open.
